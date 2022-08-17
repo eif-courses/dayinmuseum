@@ -65,7 +65,7 @@ class ExhibitsViewModel @Inject constructor(
         getExhibitJob = exhibitUseCases.getExhibits(exhibitOrder)
             .onEach { exhibits ->
                 _state.value = state.value.copy(
-                    exhibit = exhibits,
+                    exhibits = exhibits,
                     exhibitOrder = exhibitOrder
                 )
             }

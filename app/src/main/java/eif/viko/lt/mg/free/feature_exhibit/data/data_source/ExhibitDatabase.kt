@@ -6,7 +6,7 @@ import eif.viko.lt.mg.free.feature_exhibit.domain.model.Exhibit
 
 @Database(
     entities = [Exhibit::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class ExhibitDatabase: RoomDatabase(){
